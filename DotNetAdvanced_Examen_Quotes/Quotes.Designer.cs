@@ -51,7 +51,7 @@
             // lblQuotes
             // 
             this.lblQuotes.AutoSize = true;
-            this.lblQuotes.Font = new System.Drawing.Font("Pristina", 15.85714F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblQuotes.Font = new System.Drawing.Font("Poor Richard", 14.14286F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.lblQuotes.Location = new System.Drawing.Point(64, 164);
             this.lblQuotes.MaximumSize = new System.Drawing.Size(500, 200);
             this.lblQuotes.MinimumSize = new System.Drawing.Size(700, 150);
