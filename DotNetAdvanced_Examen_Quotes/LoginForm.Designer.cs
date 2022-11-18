@@ -35,6 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.linkLblReg = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // linkLabelHome
@@ -43,7 +44,7 @@
             this.linkLabelHome.AutoSize = true;
             this.linkLabelHome.Font = new System.Drawing.Font("Poor Richard", 14.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.linkLabelHome.LinkColor = System.Drawing.Color.Black;
-            this.linkLabelHome.Location = new System.Drawing.Point(223, 455);
+            this.linkLabelHome.Location = new System.Drawing.Point(12, 9);
             this.linkLabelHome.Name = "linkLabelHome";
             this.linkLabelHome.Size = new System.Drawing.Size(98, 38);
             this.linkLabelHome.TabIndex = 14;
@@ -57,7 +58,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Poor Richard", 14.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.Location = new System.Drawing.Point(496, 443);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(131, 49);
+            this.btnLogin.Size = new System.Drawing.Size(131, 62);
             this.btnLogin.TabIndex = 13;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -110,12 +111,28 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Please, Log in!";
             // 
+            // linkLblReg
+            // 
+            this.linkLblReg.ActiveLinkColor = System.Drawing.Color.Blue;
+            this.linkLblReg.AutoSize = true;
+            this.linkLblReg.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.linkLblReg.LinkColor = System.Drawing.Color.Black;
+            this.linkLblReg.Location = new System.Drawing.Point(129, 443);
+            this.linkLblReg.Name = "linkLblReg";
+            this.linkLblReg.Size = new System.Drawing.Size(280, 62);
+            this.linkLblReg.TabIndex = 23;
+            this.linkLblReg.TabStop = true;
+            this.linkLblReg.Text = "Don\'t have an account? \r\nPlease Sign up!";
+            this.linkLblReg.VisitedLinkColor = System.Drawing.Color.Black;
+            this.linkLblReg.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblReg_LinkClicked);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(866, 613);
+            this.Controls.Add(this.linkLblReg);
             this.Controls.Add(this.linkLabelHome);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.tbPassword);
@@ -139,5 +156,6 @@
         private Label label3;
         private Label label2;
         private Label label1;
+        private LinkLabel linkLblReg;
     }
 }

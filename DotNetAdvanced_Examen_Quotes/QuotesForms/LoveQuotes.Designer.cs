@@ -70,6 +70,7 @@
             // lblLove
             // 
             this.lblLove.AutoSize = true;
+            this.lblLove.Font = new System.Drawing.Font("Pristina", 15.85714F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblLove.Location = new System.Drawing.Point(41, 124);
             this.lblLove.MaximumSize = new System.Drawing.Size(600, 600);
             this.lblLove.MinimumSize = new System.Drawing.Size(700, 150);

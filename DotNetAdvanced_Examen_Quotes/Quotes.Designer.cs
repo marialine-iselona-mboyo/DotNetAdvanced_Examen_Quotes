@@ -51,6 +51,7 @@
             // lblQuotes
             // 
             this.lblQuotes.AutoSize = true;
+            this.lblQuotes.Font = new System.Drawing.Font("Pristina", 15.85714F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblQuotes.Location = new System.Drawing.Point(64, 164);
             this.lblQuotes.MaximumSize = new System.Drawing.Size(500, 200);
             this.lblQuotes.MinimumSize = new System.Drawing.Size(700, 150);
@@ -58,7 +59,7 @@
             this.lblQuotes.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblQuotes.Size = new System.Drawing.Size(700, 150);
             this.lblQuotes.TabIndex = 1;
-            this.lblQuotes.Text = "Fetched from an API, this is were the \r\nrandom quotes will be shown";
+            this.lblQuotes.Text = "This is were the daily quotes \r\nare gonna be shown\r\n";
             // 
             // menuStrip1
             // 

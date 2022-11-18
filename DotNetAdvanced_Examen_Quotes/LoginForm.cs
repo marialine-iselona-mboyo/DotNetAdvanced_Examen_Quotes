@@ -18,13 +18,24 @@ namespace DotNetAdvanced_Examen_Quotes
             InitializeComponent();
         }
 
+
+        //BACK TO HOME PAGE
         private void linkLabelHome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             MainForm mainForm = new MainForm();
             mainForm.Show();
-            this.Hide();
+            this.Close();
         }
 
+
+        
+        //TO REGISTER PAGE
+        private void linkLblReg_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Register registerForm = new Register();
+            registerForm.Show();
+            this.Close();
+        }
 
 
 
@@ -46,19 +57,31 @@ namespace DotNetAdvanced_Examen_Quotes
             {
                 try
                 {
-                    MessageBox.Show("Successfully Logged in!");
+                    connection.Open();
 
-                    Quotes quotes = new Quotes();
-                    this.Hide();
-                    quotes.ShowDialog();
-                }
-                catch
+                    try
+                    {
+
+                        MessageBox.Show("Successfully Logged in!");
+
+                        Quotes quotes = new Quotes();
+                        this.Hide();
+                        quotes.ShowDialog();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("The username or password not valid");
+
+                        tbUsername.Clear();
+                        tbPassword.Clear();
+                        tbUsername.Focus();
+                    }
+
+                    connection.Close();
+                } 
+                catch 
                 {
-                    MessageBox.Show("The username or password not valid");
-
-                    tbUsername.Clear();
-                    tbPassword.Clear();
-                    tbUsername.Focus();
+                    MessageBox.Show("Failed to connect to Database");
                 }
             }
             else
@@ -66,5 +89,7 @@ namespace DotNetAdvanced_Examen_Quotes
                 MessageBox.Show("All informations are required!");
             }
         }
+
+        
     }
 }

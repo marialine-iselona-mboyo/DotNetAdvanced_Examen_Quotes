@@ -69,6 +69,7 @@
             // lblHappy
             // 
             this.lblHappy.AutoSize = true;
+            this.lblHappy.Font = new System.Drawing.Font("Pristina", 15.85714F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblHappy.Location = new System.Drawing.Point(44, 110);
             this.lblHappy.MaximumSize = new System.Drawing.Size(600, 600);
             this.lblHappy.MinimumSize = new System.Drawing.Size(700, 175);

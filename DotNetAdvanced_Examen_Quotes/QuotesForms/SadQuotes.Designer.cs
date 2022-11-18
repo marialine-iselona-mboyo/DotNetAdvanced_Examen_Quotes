@@ -69,6 +69,7 @@
             // lblSad
             // 
             this.lblSad.AutoSize = true;
+            this.lblSad.Font = new System.Drawing.Font("Pristina", 15.85714F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSad.Location = new System.Drawing.Point(42, 120);
             this.lblSad.MaximumSize = new System.Drawing.Size(600, 600);
             this.lblSad.MinimumSize = new System.Drawing.Size(700, 150);
