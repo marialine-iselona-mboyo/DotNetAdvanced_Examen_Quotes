@@ -6,9 +6,7 @@
   <li><a href="#1">About the project</a></li>
   <li><a href="#2">General Info</a></li>
   <li><a href="#3">Description</a></li>
-  <li><a href="#4">Getting started</a></li>
-  <li><a href="#2">Build With</a></li>
-  <li><a href="#7">Authors</a></li>
+  <li><a href="#4">Authors</a></li>
   <li><a href="#5">Acknolwledgments</a></li>
 </ul>
 
@@ -54,4 +52,33 @@ you will be able to see a quote going from <i>Forest Gump</i> to <i>Victor Hugo<
 <br>
 
 On the top left, you will be able to see "File". This is the menu. <br>
-When you click on it
+When you click on it, you will see the menu. <br>
+
+![image](https://user-images.githubusercontent.com/74875856/202808919-e6807ab2-6bca-4c7c-ab10-d2d0a863e304.png)
+<br>
+
+If you choose for "Log Out", you will be logged out and redirected to the Home page.<br>
+If you chose for "Mood Quotes", you will be redirected to another form. <br>
+On this form, by clicking on the menu, you will be able to choose if you wanna go back to the main form (Today's Quote), what kind of quotes you want to see, and logout. <br>
+For the different mood quotes, you will be able to chosse between "Happy", "Love" and, "Sad" quotes. <br>
+
+![image](https://user-images.githubusercontent.com/74875856/202810407-5ed4bf8f-d357-46dc-8606-71154b67f234.png)
+<br>
+
+When you have choosen which mood quote you want to read, it will open in front of you, without having to change forms. <br>
+Thiis basically what you will see on every mood page. <br>
+
+![image](https://user-images.githubusercontent.com/74875856/202810900-3eaeef4b-1398-4ef2-86fb-29288654aca8.png)
+<br>
+
+When you press on the "Next" button, it wil randomly generate another quote. <br>
+When you press on the "Exit" button, it will close the page and go back.
+
+And this is it.
+I hope you like it.
+
+<h2 id="4">Authors</h2>
+<ul>
+  <li><a href="	
+    marialine.iselona.mboyo@student.ehb.be">Marialine ISELONA MBOYO</a></li>
+</ul>
