@@ -50,7 +50,7 @@ namespace DotNetAdvanced_Examen_Quotes
             {
                 try
                 {
-                    string ins = "INSERT INTO [tbl_newUsers](Username, Password) VALUES ('" + tbUsernameReg.Text + "', '" + tbPasswordReg.Text + "')";
+                    string ins = "INSERT INTO [tbl_Users](Username, Password) VALUES ('" + tbUsernameReg.Text + "', '" + tbPasswordReg.Text + "')";
 
                     connection.Open();
                     SqlCommand cmd = new SqlCommand(ins, connection);
