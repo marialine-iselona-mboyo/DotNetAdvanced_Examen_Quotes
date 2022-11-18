@@ -46,6 +46,8 @@ namespace DotNetAdvanced_Examen_Quotes
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Thanks for your viste! See you next time!");
+
             MainForm mainForm = new MainForm();
             mainForm.Show();
             this.Close();

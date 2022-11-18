@@ -7,6 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.IO;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.Security.Cryptography.X509Certificates;
 
 namespace DotNetAdvanced_Examen_Quotes
 {
@@ -45,11 +52,35 @@ namespace DotNetAdvanced_Examen_Quotes
         //EVERY TIME YOU OPEN THIS WINDOW, THE QUOTE WILL CHANGE
         private void Quotes_Load(object sender, EventArgs e)
         {
-
+            Generate();
         }
 
 
 
+        //CALL THE "GENERATE" METHOD BY CLICKING ON THE NEXT BUTTON
+        private async void btnGenerate_Click(object sender, EventArgs e)
+        {
+            Generate();
+        }
+
+
         //QUOTES GENEREATOR
+        void Generate()
+        {
+            List<string> list = new List<string>();
+
+            Random random = new Random();
+
+            StreamReader streamReader = new StreamReader("TodaysQuotes.txt");
+
+            string line;
+
+            while(!streamReader.EndOfStream)
+            {
+                line = streamReader.ReadLine();
+                list.Add(line);
+            }
+            lblQuotes.Text = list[random.Next(list.Count)];
+        }
     }
 }

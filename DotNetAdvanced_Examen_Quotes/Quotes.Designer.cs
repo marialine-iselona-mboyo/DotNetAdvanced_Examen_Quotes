@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblQuotes = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.moodsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.moodQuotesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,17 +48,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Today\'s Quote";
             // 
-            // label2
+            // lblQuotes
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(64, 164);
-            this.label2.MaximumSize = new System.Drawing.Size(500, 200);
-            this.label2.MinimumSize = new System.Drawing.Size(700, 150);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(700, 150);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Fetched from an API, this is were the \r\nrandom quotes will be shown";
+            this.lblQuotes.AutoSize = true;
+            this.lblQuotes.Location = new System.Drawing.Point(64, 164);
+            this.lblQuotes.MaximumSize = new System.Drawing.Size(500, 200);
+            this.lblQuotes.MinimumSize = new System.Drawing.Size(700, 150);
+            this.lblQuotes.Name = "lblQuotes";
+            this.lblQuotes.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblQuotes.Size = new System.Drawing.Size(700, 150);
+            this.lblQuotes.TabIndex = 1;
+            this.lblQuotes.Text = "Fetched from an API, this is were the \r\nrandom quotes will be shown";
             // 
             // menuStrip1
             // 
@@ -105,6 +105,7 @@
             this.btnGenerate.TabIndex = 3;
             this.btnGenerate.Text = "Generate";
             this.btnGenerate.UseVisualStyleBackColor = true;
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
             // Quotes
             // 
@@ -113,7 +114,7 @@
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnGenerate);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblQuotes);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -130,7 +131,7 @@
         #endregion
 
         private Label label1;
-        private Label label2;
+        private Label lblQuotes;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem moodsToolStripMenuItem;
         private Button btnGenerate;

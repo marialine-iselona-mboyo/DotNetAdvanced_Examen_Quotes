@@ -46,7 +46,7 @@ namespace DotNetAdvanced_Examen_Quotes
             {
                 try
                 {
-                    MessageBox.Show("Successfulle Logged in!");
+                    MessageBox.Show("Successfully Logged in!");
 
                     Quotes quotes = new Quotes();
                     this.Hide();
