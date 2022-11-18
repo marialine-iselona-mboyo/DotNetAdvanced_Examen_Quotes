@@ -52,5 +52,12 @@ namespace DotNetAdvanced_Examen_Quotes
             mainForm.Show();
             this.Close();
         }
+
+        private void mainToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Quotes mainQuotes = new Quotes();
+            mainQuotes.Show();
+            this.Close();
+        }
     }
 }

@@ -34,6 +34,7 @@
             this.loveQuotesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sadQuotesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +54,7 @@
             // moodQuotesToolStripMenuItem
             // 
             this.moodQuotesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mainToolStripMenuItem,
             this.happyQuotesToolStripMenuItem,
             this.loveQuotesToolStripMenuItem,
             this.sadQuotesToolStripMenuItem,
@@ -89,6 +91,13 @@
             this.logOutToolStripMenuItem.Text = "Log out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
+            // mainToolStripMenuItem
+            // 
+            this.mainToolStripMenuItem.Name = "mainToolStripMenuItem";
+            this.mainToolStripMenuItem.Size = new System.Drawing.Size(326, 46);
+            this.mainToolStripMenuItem.Text = "Main";
+            this.mainToolStripMenuItem.Click += new System.EventHandler(this.mainToolStripMenuItem_Click);
+            // 
             // MasterQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 37F);
@@ -117,5 +126,6 @@
         private ToolStripMenuItem loveQuotesToolStripMenuItem;
         private ToolStripMenuItem sadQuotesToolStripMenuItem;
         private ToolStripMenuItem logOutToolStripMenuItem;
+        private ToolStripMenuItem mainToolStripMenuItem;
     }
 }
